@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3 Technology Services</title>
+    <link rel="shortcut icon" href="img/pnj.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <style>
+        body{
+            background-color: rgb(188, 213, 251);
+            padding-bottom: 7cm;
+        }
+        
+</style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-ligh" id="navbar">
+            <div class="container-fluid">
+                <img  src="img/logo.jpg"  id="idLogo" alt="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="row justify-content-center" id="linkNavBar">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item" id="link">
+                            <a id="letraLink" style="cursor: pointer;" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item" id="link">
+                            <a id="letraLink" style="cursor: pointer;" href="servicos.html">Serviços</a>
+                        </li>
+                        <li class="nav-item" id="link">
+                            <a id="letraLink" style="cursor: pointer;" href="home.html">Sobre Nós</a>
+                        </li>
+                        <li class="nav-item" id="link-Contato">
+                            <a onclick="ShowAltSenha();" style="cursor: pointer;" id="letraLink">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    <div class="modal hide fade" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true"
+        id="mdAltSenha">
+        <div class="modal-dialog" style="width: 50%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="text-center">Nossos contatos</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-auto">
+                            <div class="input-group mb-2">
+                                <p>Telefone</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-auto">
+                            <div class="input-group mb-2">
+                                <P>Email</P>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer form-group">
+                    <button class="btn btn-primary" onclick="hideAltSenha();">Sair</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="border-top footer text-muted" id="footerId">
+        <div class="">
+            &copy; 2022 <a href="">Comentario</a>
+        </div>
+
+    </footer>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Primeiro" agent-id="d11622e7-ccc6-402c-a2fa-70bd60bae0eb"
+        language-code="pt-br"></df-messenger>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script>
+        function ShowAltSenha() {
+
+            $("#mdAltSenha").modal("show");
+        }
+    </script>
+    <script>
+        function hideAltSenha() {
+
+            $("#mdAltSenha").modal("hide");
+        }
+    </script>
+
+</body>
+
+</html>
