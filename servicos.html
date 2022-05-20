@@ -12,24 +12,23 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <style>
-        body{
-            background-color: rgb(188, 213, 251);
+        body {
+            background-color: #efefef;
             padding-bottom: 7cm;
         }
-        
-</style>
+    </style>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-ligh" id="navbar">
             <div class="container-fluid">
-                <img  src="img/logo.jpg"  id="idLogo" alt="logo">
+                <img src="img/logo.jpg" id="idLogo" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,60 +52,109 @@
             </div>
         </nav>
     </header>
-   
-    <div class="modal hide fade" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true"
-        id="mdAltSenha">
-        <div class="modal-dialog" style="width: 50%;">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="text-center">Nossos contatos</h4>
+    <br>
+    <h1 class="produtos">Produtos</h1>
+    <br>
+    <br>
+    <p>Por se tratar de uma Suite Completa e totalmente customizável a <b> A3 Technology Services</b> atenderá sua
+        Empresa,
+        independente do segmento ou porte.<br>
+        Sua forma de implantação e licenciamento flexível são diferenciais positivos que nos coloca a frente no
+        mercado.</p>
+    <br>
+    <br><br>
+
+    <div class="row g-4 mb-4">
+        <div class="col-12 col-lg-6" id="containerservicos">
+            <div class="app-card app-card-chart h-100 shadow-sm">
+                <div class="app-card-header p-3 border-0">
+                    <h4 class="app-card-title" id="idprodutos">A3Doc</h4>
                 </div>
-                <div class="modal-body">
-                    <div class="row g-3">
-                        <div class="col-auto">
-                            <div class="input-group mb-2">
-                                <p>Telefone</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-auto">
-                            <div class="input-group mb-2">
-                                <P>Email</P>
-                            </div>
-                        </div>
+                <img class="float-left mr-4" id="imgServicos" src="img/doc.jpg" alt="">
+                <div class="app-card-body p-4">
+                    <div class="chart-container" id="linkservice">
+                        <p> A3Doc
+                            Uma ferramenta de gereciamento digital de documentos.
+                            Organize os documentos de sua empresa de forma eficiente, rápida e
+                            100% online, totalmente seguro e acessível de qualquer lugar. <a href="pageservicoa3doc.html" style="font-size: 25px;">Saiba mais</a></p>
+                        <br>
+                        
                     </div>
                 </div>
-                <div class="modal-footer form-group">
-                    <button class="btn btn-primary" onclick="hideAltSenha();">Sair</button>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6" id="containerservicos">
+            <div class="app-card app-card-chart h-100 shadow-sm">
+                <div class="app-card-header p-3 border-0">
+                    <h4 class="app-card-title" id="idprodutos">A3RPA</h4>
+                </div>
+                <img class="float-left mb-4" id="imgServicos" src="img/rpa.png" alt="">
+                <div class="app-card-body p-4">
+                    <div class="chart-container" id="linkservice">
+                        <p>A3RPA é a automação de processos robóticos. Pense no <b>A3RPA</b> como uma força de trabalho digital que pode
+                            interagir com qualquer sistema ou aplicativo. Por exemplo, os bots são capazes de copiar e
+                            colar, raspar dados da web, analisar e-mails, fazer
+                            login em programas, conectar-se a APIs e extrair dados não estruturados. <a href="pageservicoa3doc.html" style="font-size: 25px;">Saiba mais</a></p>
+                        <br>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer class="border-top footer text-muted" id="footerId">
-        <div class="">
-            &copy; 2022 <a href="">Comentario</a>
+    <div class="modal hide fade" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true"
+    id="mdAltSenha">
+    <div class="modal-dialog" style="width: 50%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="text-center">Nossos contatos</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row g-3">
+                    <div class="col-auto">
+                        <div class="input-group mb-2">
+                            <p>Telefone</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-auto">
+                        <div class="input-group mb-2">
+                            <P>Email</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer form-group">
+                <button class="btn btn-primary" onclick="hideAltSenha();">Sair</button>
+            </div>
         </div>
+    </div>
+</div>
+<footer class="border-top footer text-muted" id="footerId">
+    <div class="">
+        &copy; 2022 <a href="">Comentario</a>
+    </div>
 
-    </footer>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="Primeiro" agent-id="d11622e7-ccc6-402c-a2fa-70bd60bae0eb"
-        language-code="pt-br"></df-messenger>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-    <script>
-        function ShowAltSenha() {
+</footer>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME" chat-title="Primeiro" agent-id="d11622e7-ccc6-402c-a2fa-70bd60bae0eb"
+    language-code="pt-br"></df-messenger>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script>
+    function ShowAltSenha() {
 
-            $("#mdAltSenha").modal("show");
-        }
-    </script>
-    <script>
-        function hideAltSenha() {
+        $("#mdAltSenha").modal("show");
+    }
+</script>
+<script>
+    function hideAltSenha() {
 
-            $("#mdAltSenha").modal("hide");
-        }
-    </script>
+        $("#mdAltSenha").modal("hide");
+    }
+</script>
 
 </body>
 
