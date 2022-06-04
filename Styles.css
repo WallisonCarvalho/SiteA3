@@ -5,6 +5,7 @@
     justify-content: space-between;
     background: rgb(255, 255, 255);
     height: 0%;
+   border-bottom: solid #73a2bb;
 
 
 }
@@ -15,13 +16,13 @@
 
 #letraLink {
     color: rgb(5, 4, 4);
-    font-size: 130%;
+    font-size: 180%;
 
 }
 
 a {
-
-    font-size: 120%;
+background: #73a2bb;
+    font-size: 20px;
     text-align: center;
     display: inline-block;
     padding-right: 0.5cm;
@@ -34,15 +35,24 @@ a {
     padding-bottom: 0cm;
 }
 #carouselSlide {
-       background-color:  #efefef;;
+    background-color: #efefef;;
    
     
     padding-top: 70px;
 }
 
 h1,
-h3,
-p {
+h2{
+    font-size: 120px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+
+p,
+h3{
     text-align: center;
 }
 
@@ -101,3 +111,45 @@ img {
     padding-left: 2cm;
 }
 
+body {
+    background-color: #f8f8f8;
+  }
+  
+  /* Form */
+  #form-container {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, 0.2);
+    margin: 25px auto;
+    padding: 25px;
+  }
+
+#idpsobrenos{
+    text-align: center;
+}
+
+
+
+
+
+
+
+body {
+    background-color: #f8f8f8;
+  }
+  
+  /* Form */
+
+  #form-container h2 {
+    font-weight: 900;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+  }
+   #form-container .form-control {
+    border: none;
+    border-bottom: 1px solid #CCC;
+    border-radius: 0;
+   
+  }
+ 
