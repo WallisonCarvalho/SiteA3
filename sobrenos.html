@@ -18,16 +18,17 @@
 </head>
 <style>
     body {
-        background-color: rgb(158, 209, 234);
+        background-color: rgb(220, 205, 213);
         padding-bottom: 7cm;
     }
 
-    .bodyClass {
-        background-color: #efefef;
+    .bodyClass{
+        background-color: #9ad5f4;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-    }
+    };
+   
 
    </style>
 
@@ -48,7 +49,7 @@
                             <a id="letraLink" style="cursor: pointer;" href="home.html">Home</a>
                         </li>
                         <li class="nav-item" id="link">
-                            <a id="letraLink" style="cursor: pointer;" href="servicos.html">Serviços</a>
+                            <a id="letraLink" style="cursor: pointer;" href="servicos.html">Produtos</a>
                         </li>
                         <li class="nav-item" id="link">
                             <a id="letraLink" style="cursor: pointer;" href="sobrenos.html">Sobre Nós</a>
@@ -137,7 +138,6 @@
 </div>
 </div>
 </div>
-
 <div class="container col-11 col-md-9" id="form-container">
     <div class="row align-items-center gx-5">
         <div class="col order-md-2">
@@ -150,34 +150,33 @@
 
             <p> - Governança corporativa: sempre buscando estar de acordo com as regras de ética e compliance praticando, também, a transparência fiscal com prioridade.</p>
             <br>
-<div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-    id="mdAltSenha">
-    <div class="container col-11 col-md-9" id="form-container">
-        <div class="row align-items-center gx-5">
-            <div class="col-md-6 order-md-2">
-                <h2>Entre em contato conosco</h2>
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="nome" class="form-control" id="email" name="email" placeholder="Nome">
-                        <label for="nome" class="form-label">Digite o seu nome</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
-                        <label for="email" class="form-label">Digite o seu e-mail</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                                                <input type="telefone" class="form-control" id="email" name="email" placeholder="(00) 0000-0000">
-                        <label for="telefone" class="form-label">Digite o seu telefone</label>
-                    </div>
-                    
-                    <input type="submit" class="btn btn-primary" onclick="funcao1()"value="Enviar">
-                    <input type="submit" class="btn btn-primary" value="Sair">
-                </form>
+            <div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+            id="mdAltSenha">
+            <div class="container col-11 col-md-9" id="form-container">
+                <div class="row align-items-center gx-5">
+                    <div class="col-md-6 order-md-2">
+                        <h2>Entre em contato conosco</h2>
+                        <form>
+                            <div class="form-floating mb-3">
+                                <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome">
+                                <label for="nome" class="form-label">Digite o seu nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail">
+                                <label for="email" class="form-label">Digite o seu e-mail</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="telefone"  class="form-control" name="telefone" id="telefone" placeholder="(00) 0000-0000" maxlength="15" />
+                                                                                <label for="telefone" class="form-label">Digite o seu telefone</label>
+                            </div>
+                            
+                            <input type="submit" class="btn btn-primary" onclick="funcao1()"value="Enviar">
+                            <input type="submit" class="btn btn-primary" value="Sair">
+                        </form>
+                </div>
             </div>
-            
         </div>
-    </div>
-</div>
+        </div>
 </div>
     <footer class="border-top footer text-muted" id="footerId">
         <div class="">
@@ -185,10 +184,7 @@
         </div>
 
     </footer>
-    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="Primeiro" agent-id="d11622e7-ccc6-402c-a2fa-70bd60bae0eb"
-        language-code="pt-br"></df-messenger>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <script>

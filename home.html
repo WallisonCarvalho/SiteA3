@@ -21,13 +21,14 @@
         background-color:  rgb(93, 183, 228);
         padding-bottom: 7cm;
     }
-    .bodyClass{
-        background-color: #efefef;
+
+        .bodyClass{
+        background-color: #9ad5f4;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        
     };
-      
 </style>
 <body class="bodyClass">
 
@@ -46,7 +47,7 @@
                             <a id="letraLink" style="cursor: pointer;" href="home.html">Home</a>
                         </li>
                         <li class="nav-item" id="link">
-                            <a id="letraLink" style="cursor: pointer;" href="servicos.html">Serviços</a>
+                            <a id="letraLink" style="cursor: pointer;" href="servicos.html">Produtos</a>
                         </li>
                         <li class="nav-item" id="link">
                             <a id="letraLink" style="cursor: pointer;" href="sobrenos.html">Sobre Nós</a>
@@ -59,7 +60,7 @@
             </div>
         </nav>
     </header>
-    <div class="container mb-1" id="carouselSlide">
+    <div class="container mb-1" id="form-container">
         <h1 class="classh1"><b>Digitalizamos seus Processos e seus Documentos</b></h1>
         <br>
         <br>
@@ -117,36 +118,39 @@
                 <h2>Entre em contato conosco</h2>
                 <form>
                     <div class="form-floating mb-3">
-                        <input type="nome" class="form-control" id="email" name="email" placeholder="Nome">
+                        <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome">
                         <label for="nome" class="form-label">Digite o seu nome</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="E-mail">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail">
                         <label for="email" class="form-label">Digite o seu e-mail</label>
                     </div>
                     <div class="form-floating mb-3">
-                                                <input type="telefone" class="form-control" id="email" name="email" placeholder="(00) 0000-0000">
-                        <label for="telefone" class="form-label">Digite o seu telefone</label>
+                        <input type="telefone"  class="form-control" name="telefone" id="telefone" placeholder="(00) 0000-0000" maxlength="15" />
+                                                                        <label for="telefone" class="form-label">Digite o seu telefone</label>
                     </div>
                     
                     <input type="submit" class="btn btn-primary" onclick="funcao1()"value="Enviar">
                     <input type="submit" class="btn btn-primary" value="Sair">
                 </form>
-            </div>
-            
         </div>
     </div>
 </div>
 </div>
     <footer class="border-top footer text-muted" id="footerId">
         <div class="">
-            &copy; 2022 <a href="">Comentario</a>
+            
+            &copy; Seja bem-vindo ao nosso site
         </div>
 
     </footer>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger intent="WELCOME" chat-title="Primeiro" agent-id="d11622e7-ccc6-402c-a2fa-70bd60bae0eb"
-        language-code="pt-br"></df-messenger>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="A3TechnologyServices"
+      agent-id="8d35d1b5-4c6c-4370-ac84-0197928c7c01"
+      language-code="pt-br"
+    ></df-messenger>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -166,6 +170,30 @@
         function funcao1()
 {
 alert("Contato enviado com sucesso!");
+}
+
+/* Máscaras ER */
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('telefone').onkeyup = function(){
+		mascara( this, mtel );
+	}
 }
     </script>
 
