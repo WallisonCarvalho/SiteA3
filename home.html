@@ -12,31 +12,34 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" type="text/css" media="screen"
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <style>
-    body{
-        background-color:  rgb(93, 183, 228);
+    body {
+        background-color: rgb(93, 183, 228);
         padding-bottom: 7cm;
     }
 
-        .bodyClass{
+    .bodyClass {
         background-color: #9ad5f4;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        
-    };
+
+    }
+
+    ;
 </style>
+
 <body class="bodyClass">
 
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-ligh" id="navbar">
             <div class="container-fluid">
-                <img  src="img/logo.jpg"  id="idLogo" alt="logo">
+                <img src="img/logo.jpg" id="idLogo" alt="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -53,7 +56,7 @@
                             <a id="letraLink" style="cursor: pointer;" href="sobrenos.html">Sobre Nós</a>
                         </li>
                         <li class="nav-item" id="link-Contato">
-                            <a onclick="ShowAltSenha();"  style="cursor: pointer;" id="letraLink">Contato</a>
+                            <a onclick="ShowAltSenha();" style="cursor: pointer;" id="letraLink">Contato</a>
                         </li>
                     </ul>
                 </div>
@@ -68,12 +71,12 @@
 
         <h3>Uma solução de Gestão Documental e de Informação amparada em Workflows totalmente customizáveis permitindo
             acelerar e automatizar processos.</h3>
-            <br>
-            <br>
-            <br>
+        <br>
+        <br>
+        <br>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                      <div class="carousel-inner">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="float-left mr-4" src="img/consulting.jpg" alt="First slide">
                     <h2><b>Consultoria</b></h2>
@@ -98,7 +101,7 @@
                     <h2>
                         <br>
                         <b>Implementação
-                        e Implantação</b>
+                            e Implantação</b>
                     </h2>
                     <h3>
                         Desenvolvemos o sistemas e vamos até
@@ -106,51 +109,91 @@
                     </h3>
                 </div>
             </div>
-                    
+
         </div>
     </div>
-    
+    <br>
+    <br>
+    <br>
+    <div class="container0101" id="gallery-container">
+        <br>
+        <br>
+        <div class="col-12">
+            <h1 class="h1NossosClientes">Nossos Clientes</h1>
+        </div>
+        <br>
+        <div class="row gx-md-5" id="idcontainerImg">
+            <div class="col-12 col-md-3">
+                <img src="img/BancoItaú.jpg" alt="">
+
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/CaixaEconomica.jpg" alt="">
+
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/LogoOutback.png" alt="">
+
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/LogoMagazine.jpeg" alt="">
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/LogoWeg.png" alt="">
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/Sãomatheus.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/mercadoExtra.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-3">
+                <img src="img/petrorio.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
     <div class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-    id="mdAltSenha">
-    <div class="container col-11 col-md-9" id="form-container">
-        <div class="row align-items-center gx-5">
-            <div class="col-md-6 order-md-2">
-                <h2>Entre em contato conosco</h2>
-                <form>
-                    <div class="form-floating mb-3">
-                        <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome">
-                        <label for="nome" class="form-label">Digite o seu nome</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail">
-                        <label for="email" class="form-label">Digite o seu e-mail</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="telefone"  class="form-control" name="telefone" id="telefone" placeholder="(00) 0000-0000" maxlength="15" />
-                                                                        <label for="telefone" class="form-label">Digite o seu telefone</label>
-                    </div>
-                    
-                    <input type="submit" class="btn btn-primary" onclick="funcao1()"value="Enviar">
-                    <input type="submit" class="btn btn-primary" value="Sair">
-                </form>
+        id="mdAltSenha">
+        <div class="container col-11 col-md-9" id="form-container">
+            <div class="row align-items-center gx-5">
+                <div class="col-md-6 order-md-2">
+                    <h2>Entre em contato conosco</h2>
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="nome" class="form-control" id="nome" name="nome" placeholder="Nome">
+                            <label for="nome" class="form-label">Digite o seu nome</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Digite o seu e-mail">
+                            <label for="email" class="form-label">Digite o seu e-mail</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="telefone" class="form-control" name="telefone" id="telefone"
+                                placeholder="(00) 0000-0000" maxlength="15" />
+                            <label for="telefone" class="form-label">Digite o seu telefone</label>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" onclick="funcao1()" value="Enviar">
+                        <input type="submit" class="btn btn-primary" value="Sair">
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
     <footer class="border-top footer text-muted" id="footerId">
         <div class="">
-            
+
             &copy; Seja bem-vindo ao nosso site
         </div>
 
     </footer>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-      intent="WELCOME"
-      chat-title="A3TechnologyServices"
-      agent-id="8d35d1b5-4c6c-4370-ac84-0197928c7c01"
-      language-code="pt-br"
-    ></df-messenger>
+    <df-messenger intent="WELCOME" chat-title="A3TechnologyServices" agent-id="8d35d1b5-4c6c-4370-ac84-0197928c7c01"
+        language-code="pt-br"></df-messenger>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -166,35 +209,34 @@
             $("#mdAltSenha").modal("hide");
         }
     </script>
-      <script>
-        function funcao1()
-{
-alert("Contato enviado com sucesso!");
-}
+    <script>
+        function funcao1() {
+            alert("Contato enviado com sucesso!");
+        }
 
-/* Máscaras ER */
-function mascara(o,f){
-    v_obj=o
-    v_fun=f
-    setTimeout("execmascara()",1)
-}
-function execmascara(){
-    v_obj.value=v_fun(v_obj.value)
-}
-function mtel(v){
-    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
-    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
-    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
-    return v;
-}
-function id( el ){
-	return document.getElementById( el );
-}
-window.onload = function(){
-	id('telefone').onkeyup = function(){
-		mascara( this, mtel );
-	}
-}
+        /* Máscaras ER */
+        function mascara(o, f) {
+            v_obj = o
+            v_fun = f
+            setTimeout("execmascara()", 1)
+        }
+        function execmascara() {
+            v_obj.value = v_fun(v_obj.value)
+        }
+        function mtel(v) {
+            v = v.replace(/\D/g, ""); //Remove tudo o que não é dígito
+            v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+            v = v.replace(/(\d)(\d{4})$/, "$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+            return v;
+        }
+        function id(el) {
+            return document.getElementById(el);
+        }
+        window.onload = function () {
+            id('telefone').onkeyup = function () {
+                mascara(this, mtel);
+            }
+        }
     </script>
 
 </body>

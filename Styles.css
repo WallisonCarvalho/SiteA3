@@ -214,14 +214,42 @@ body {
   }
   
   /* Image */
-  
-  .row.align-items-center {
-    align-content: center;
-    height: 100%;
-  }
-  
-  #link-container {
-    text-align: center;
-    padding-top: 50px;
-  }
+
  
+  
+
+#gallery-container h1 {
+  text-align: center;
+}
+
+#gallery-container h1,
+#gallery-container .col-md-6,
+#gallery-container .col-12 {
+  margin-bottom: 50px;
+}
+ #gallery-container{
+   background-color: #FFF;
+   border-top: solid #73a2bb;
+   padding-left: 4cm;
+   padding-right: 3cm;
+   padding-bottom: 3cm;
+   border-bottom: solid #73a2bb;
+
+ }
+
+.small-image-container {
+  height: 250px;
+  width: 250;
+ 
+  
+}
+    .classh1{
+      color: #1458bd;
+      font-size: 60px;
+    }
+    .h1NossosClientes{
+      color: #1458bd;
+      font-size: 50px;
+    }
+
+  
