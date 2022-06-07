@@ -238,8 +238,8 @@ body {
  }
 
 .small-image-container {
-  height: 250px;
-  width: 250;
+  height: 100px;
+  width: 100px;
  
   
 }
@@ -249,7 +249,10 @@ body {
     }
     .h1NossosClientes{
       color: #1458bd;
-      font-size: 50px;
+      font-size: 60px;
     }
+#idparagrafos{
+  text-align: justify;
+}
 
   
